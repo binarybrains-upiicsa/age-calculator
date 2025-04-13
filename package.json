@@ -8,6 +8,9 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "dependencies": {
+    "luxon": "^3.6.1"
+  },
   "devDependencies": {
     "vite": "^6.2.0"
   }
