@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Age calculator</title>
   </head>
+
   <body>
+    <form id="ageCalculatorForm">
+      <input type="date" id="birthdayInput" name="birthday" />
+      <div id="birthdayError"></div>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
