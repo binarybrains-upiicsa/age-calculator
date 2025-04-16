@@ -14,55 +14,55 @@ birthDayInput.max = MAX_DATE.toISOString().split("T")[0];
 birthDayInput.min = `${MIN_YEAR}-01-01`;
 
 const validateBirthDay = (birthday) => {
-    if (!birthday) {
-        return { value: null, error: "Please select a date" };
-    }
+  if (!birthday) {
+    return { value: null, error: "Please select a date" };
+  }
 
-    if (!Date.parse(birthday)) {
-        return { value: null, error: "Please enter a valid date" };
-    }
+  if (!Date.parse(birthday)) {
+    return { value: null, error: "Please enter a valid date" };
+  }
 
-    if (birthday === CURRENT_DATE.toISOString().split("T")[0]) {
-        return { value: null, error: "Please select a date in the past" };
-    }
+  if (birthday === CURRENT_DATE.toISOString().split("T")[0]) {
+    return { value: null, error: "Please select a date in the past" };
+  }
 
-    const birthDate = new Date(birthday);
-    if (birthDate > CURRENT_DATE) {
-        return { value: null, error: "Please select a date in the past" };
-    }
+  const birthDate = new Date(birthday);
+  if (birthDate > CURRENT_DATE) {
+    return { value: null, error: "Please select a date in the past" };
+  }
 
-    if (birthDate.getFullYear() < MIN_YEAR) {
-        return { value: null, error: `Please select a date after ${MIN_YEAR}` };
-    }
+  if (birthDate.getFullYear() < MIN_YEAR) {
+    return { value: null, error: `Please select a date after ${MIN_YEAR}` };
+  }
 
-    const age = CURRENT_DATE.getFullYear() - birthDate.getFullYear();
-    if (age > MAX_AGE) {
-        return {
-            value: null,
-            error: `Please select a date less than ${MAX_AGE} years`,
-        };
-    }
+  const age = CURRENT_DATE.getFullYear() - birthDate.getFullYear();
+  if (age > MAX_AGE) {
+    return {
+      value: null,
+      error: `Please select a date less than ${MAX_AGE} years`,
+    };
+  }
 
-    return { value: birthday, error: null };
+  return { value: birthday, error: null };
 };
 
 ageCalculatorForm.addEventListener("submit", (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    const formData = new FormData(event.target);
+  const formData = new FormData(event.target);
 
-    const { birthday } = Object.fromEntries(formData);
+  const { birthday } = Object.fromEntries(formData);
 
-    const { value, error } = validateBirthDay(birthday);
+  const { value, error } = validateBirthDay(birthday);
 
-    if (error) {
-        birthDayInput.classList.add("error");
-        birthdayError.textContent = error;
-        return;
-    }
+  if (error) {
+    birthDayInput.classList.add("error");
+    birthdayError.textContent = error;
+    return;
+  }
 
-    birthDayInput.classList.remove("error");
-    birthdayError.textContent = "";
+  birthDayInput.classList.remove("error");
+  birthdayError.textContent = "";
 
-    event.target.reset();
+  event.target.reset();
 });
