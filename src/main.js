@@ -1,14 +1,23 @@
 import "./styles/app.css";
-
-const CURRENT_DATE = new Date();
-const MAX_DATE = new Date(new Date().setDate(new Date().getDate() - 1));
-const MIN_YEAR = 1900;
-const MAX_AGE = 120;
+import { DateTime } from "luxon";
+import { counterAnimation } from "./utils/counter";
+import {
+  ANIMATION_DELAY,
+  CURRENT_DATE,
+  MAX_AGE,
+  MAX_DATE,
+  MIN_YEAR,
+} from "./utils/constants";
 
 const birthDayInput = document.getElementById("birthdayInput");
 
 const ageCalculatorForm = document.getElementById("ageCalculatorForm");
 const birthdayError = document.getElementById("birthdayError");
+
+const yearsElement = document.getElementById("years");
+const monthsElement = document.getElementById("months");
+const yearsRange = document.getElementById("yearsRange");
+const monthsRange = document.getElementById("monthsRange");
 
 birthDayInput.max = MAX_DATE.toISOString().split("T")[0];
 birthDayInput.min = `${MIN_YEAR}-01-01`;
@@ -22,7 +31,7 @@ const validateBirthDay = (birthday) => {
     return { value: null, error: "Please enter a valid date" };
   }
 
-  if (birthday === CURRENT_DATE.toISOString().split("T")[0]) {
+  if (birthday === MAX_DATE.toISOString().split("T")[0]) {
     return { value: null, error: "Please select a date in the past" };
   }
 
@@ -65,4 +74,33 @@ ageCalculatorForm.addEventListener("submit", (event) => {
   birthdayError.textContent = "";
 
   event.target.reset();
+
+  const end = DateTime.fromISO(CURRENT_DATE.toISOString().split("T")[0]);
+  const start = DateTime.fromISO(value);
+
+  const diffObj = end.diff(start, ["months", "years"]).toObject();
+
+  const months = Math.floor(diffObj.months);
+  const years = Math.floor(diffObj.years);
+
+  const monthText = months === 1 ? "month" : "months";
+  const yearText = years === 1 ? "year" : "years";
+
+  yearsElement.textContent = `0 ${yearText}`;
+  monthsElement.textContent = `0 ${monthText}`;
+
+  counterAnimation(years, (current, _target) => {
+    yearsElement.textContent = `${current} ${yearText}`;
+    yearsRange.value = current;
+  }, {
+    delay: ANIMATION_DELAY,
+    onFinish: () => {
+      counterAnimation(months, (current, _target) => {
+        monthsElement.textContent = `${current} ${monthText}`;
+        monthsRange.value = current;
+      }, {
+        delay: ANIMATION_DELAY,
+      });
+    },
+  });
 });
