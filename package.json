@@ -12,6 +12,7 @@
     "vite": "^6.3.0"
   },
   "dependencies": {
-    "js-datepicker": "^5.18.4"
+    "js-datepicker": "^5.18.4",
+    "luxon": "^3.6.1"
   }
 }
