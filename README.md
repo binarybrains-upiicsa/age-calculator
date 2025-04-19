@@ -23,3 +23,5 @@ https://github.com/user-attachments/assets/c3ded42d-fbf5-440d-ae55-51d74f8bf379
 ## Soluciones hechas por la comunidad
 |Usuario|Repositorio| Website | Figma|
 |-------|-----------|---------|------|
+|<a href="https://github.com/EGAMAGZ/">EGAMAGz</a>|<a href="https://github.com/EGAMAGZ/age-calculator">Repositorio</a>|N/A|No hice|
+|<a href="https://github.com/Rssstone">Cruz</a>|<a href="https://github.com/Rssstone/age-calculator">Repositorio</a>|N/A|N/A|
