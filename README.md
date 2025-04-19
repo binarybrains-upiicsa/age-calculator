@@ -17,23 +17,6 @@ Se requiere desarrollar una calculadora de edad con las siguientes característi
 > [!NOTE]
 > Este proyecto es obtenido de la página de <a href="https://roadmap.sh/projects/age-calculator">roadmap.sh</a>
 
-## Como ejecutarlo?
-Para poder ejecutar este proyecto, deberás tener instalado Docker en tu computadora, y tienes dos opciones. Los pasos son los siguientes:
-
-### Opción #1
-1. Clona el proyecto en tu computadora.
-2. En la terminal ingresa a la carpeta del proyecto.
-3. Corre el comando ```docker build -t age-calculator .```
-4. Corre el comando ```docker run -dp 5153:5153 age-calculator```
-5. Ingresa a ```http://localhost:5153``` y podrás ver y hacer uso de la app c:
-
-### Opción #2
-1. Clona el proyecto en tu computadora.
-2. En la terminal ingresa a la carpeta del proyecto.
-3. Corre el comando ```docker pull tu_usuario/age-calculator```
-4. Corre el comando ```docker run -dp 5153:5153 tu_usuario/age-calculator```
-5. Ingresa a ```http://localhost:5153``` y podrás ver y hacer uso de la app c:
-
 
 ## Soluciones hechas por la comunidad
 |Usuario|Repositorio| Website | Figma|
