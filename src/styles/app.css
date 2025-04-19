@@ -1,1 +1,10 @@
 @import "./reset.css";
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -6,13 +6,12 @@ export function counterAnimation(
   let currentNumber = initial;
 
   const interval = setInterval(() => {
-    currentNumber += increment;
-
-    onIncrement(currentNumber, target);
-
     if (currentNumber >= target) {
       clearInterval(interval);
       onFinish();
+    } else {
+      currentNumber += increment;
+      onIncrement(currentNumber, target);
     }
   }, delay);
 }
