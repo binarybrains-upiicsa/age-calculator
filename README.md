@@ -20,3 +20,4 @@ Se requiere desarrollar una calculadora de edad con las siguientes característi
 ## Soluciones hechas por la comunidad
 |Usuario|Repositorio| Website | Figma|
 |-------|-----------|---------|------|
+|<a href="https://github.com/EGAMAGZ/">EGAMAGz</a>|<a href="https://github.com/EGAMAGZ/age-calculator">Repositorio</a>|N/A|No hice|
