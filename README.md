@@ -37,4 +37,4 @@ Para poder ejecutar este proyecto, deberás tener instalado Docker en tu computa
 
 ## Soluciones hechas por la comunidad
 |Usuario|Repositorio| Website | Figma|
-|-------|-----------|---------|------|
+|<a href="https://github.com/mendodevv">mendodevv</a>|<a href="https://github.com/mendodevv/age-calculator/tree/mendodev/solution">Repositorio</a>|---------|<a href="https://www.figma.com/proto/L11QQlvwGuXb5lepZRm6MM/Age-Calculator?node-id=74-7&t=S4vXdSlM09ms5JFj-1">Prototype</a>|
