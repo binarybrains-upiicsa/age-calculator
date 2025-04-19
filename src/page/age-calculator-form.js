@@ -90,11 +90,11 @@ export class AgeCalculatorForm extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <style>
                 :host {
- display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Optional: makes it vertically centered on the page */
-    width: 100vw; 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: 100vh;
+                    width: 100vw;
                 }
                 :root {
                     --card-background: #dcebfe;
