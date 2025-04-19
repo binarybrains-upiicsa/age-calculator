@@ -23,3 +23,6 @@ Se requiere desarrollar una calculadora de edad con las siguientes característi
 |<a href="https://github.com/EGAMAGZ/">EGAMAGz</a>|<a href="https://github.com/EGAMAGZ/age-calculator">Repositorio</a>|N/A|No hice|
 |<a href="https://github.com/Rssstone">Cruz</a>|<a href="https://github.com/Rssstone/age-calculator">Repositorio</a>|N/A|N/A|
 |<a href="https://github.com/AgustinPL-cmd">Agustín</a>|<a href="https://github.com/AgustinPL-cmd/age-calculator">Repositorio</a>|N/A|N/A|
+|[Gomen_J](https://github.com/Leviakc) | [Repositorio](https://github.com/Leviakc/age-calculator)| N/A | N/A |
+
+
