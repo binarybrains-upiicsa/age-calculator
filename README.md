@@ -17,6 +17,9 @@ Se requiere desarrollar una calculadora de edad con las siguientes característi
 > [!NOTE]
 > Este proyecto es obtenido de la página de <a href="https://roadmap.sh/projects/age-calculator">roadmap.sh</a>
 
+# Video de mi solución
+https://github.com/user-attachments/assets/c3ded42d-fbf5-440d-ae55-51d74f8bf379
+
 ## Soluciones hechas por la comunidad
 |Usuario|Repositorio| Website | Figma|
 |-------|-----------|---------|------|
