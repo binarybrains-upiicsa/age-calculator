@@ -21,4 +21,8 @@ Se requiere desarrollar una calculadora de edad con las siguientes característi
 ## Soluciones hechas por la comunidad
 |Usuario|Repositorio| Website | Figma|
 |-------|-----------|---------|------|
+|<a href="https://github.com/EGAMAGZ/">EGAMAGz</a>|<a href="https://github.com/EGAMAGZ/age-calculator">Repositorio</a>|N/A|No hice|
+|<a href="https://github.com/Rssstone">Cruz</a>|<a href="https://github.com/Rssstone/age-calculator">Repositorio</a>|N/A|N/A|
+|<a href="https://github.com/AgustinPL-cmd">Agustín</a>|<a href="https://github.com/AgustinPL-cmd/age-calculator">Repositorio</a>|N/A|N/A|
+|[Gomen_J](https://github.com/Leviakc) | [Repositorio](https://github.com/Leviakc/age-calculator)| N/A | N/A |
 |<a href="https://github.com/mendodevv">mendodevv</a>|<a href="https://github.com/mendodevv/age-calculator/tree/mendodev/solution">Repositorio</a>|N/A|<a href="https://www.figma.com/proto/L11QQlvwGuXb5lepZRm6MM/Age-Calculator?node-id=74-7&t=S4vXdSlM09ms5JFj-1">Prototype</a>|
